@@ -1,0 +1,87 @@
+{% extends "aitools_base.html" %}
+{% block title %}AiTools - a Blacktech Company{% endblock %}
+{% block body %}
+
+<body class="app sidebar-mini ltr">
+
+    <!-- BACKGROUND-IMAGE -->
+    <div>
+
+        <!-- PAGE -->
+        <div class="page">
+            <div class="">
+
+                <!-- CONTAINER OPEN -->
+                <div class="col col-login mx-auto mt-7">
+                    <div class="text-center">
+                        <img src="static/ext_images/ai_logo.png" class="header-brand-img" alt="">
+                    </div>
+                </div>
+
+                <div class="container-login100">
+                    <div class="wrap-login100 p-6">
+                        <form class="login100-form" method="POST">
+                            <span class="login100-form-title pb-5">
+                                Admin Login
+                            </span>
+                            <div class="panel panel-primary">
+                                <div class="panel-body tabs-menu-body p-0 pt-5">
+                                    <div class="tab-content">
+                                        <div class="text-red" style="padding-left: 30px;">{{error}}</div>
+                                        <div class="tab-pane active" id="tab5">
+                                            <div class="input-group">
+                                                <a class="input-group-text bg-white text-muted">
+                                                    <i class="zmdi zmdi-email text-muted" aria-hidden="true"></i>
+                                                </a>
+                                                <input name="username" class="border-start-0 form-control ms-0" type="text" placeholder="Username">
+                                            </div>
+                                            <div class="input-group" id="Password-toggle">
+                                                <a href="javascript:void(0)" class="input-group-text bg-white text-muted">
+                                                    <i class="zmdi zmdi-eye text-muted" aria-hidden="true"></i>
+                                                </a>
+                                                <input name="password" class="border-start-0 form-control ms-0" type="password" placeholder="Password">
+                                            </div>
+                                            <div class="container-login100-form-btn">
+                                                <button class="btn btn-primary" type="submit">LogIn</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <!-- CONTAINER CLOSED -->
+            </div>
+        </div>
+        <!-- End PAGE -->
+
+    </div>
+    <!-- BACKGROUND-IMAGE CLOSED -->
+
+    <!-- JQUERY JS -->
+    <script src="static/assets/js/jquery.min.js"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="static/assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="static/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- SHOW PASSWORD JS -->
+    <script src="static/assets/js/show-password.min.js"></script>
+
+    <!-- GENERATE OTP JS -->
+    <script src="static/assets/js/generate-otp.js"></script>
+
+    <!-- Perfect SCROLLBAR JS-->
+    <script src="static/assets/plugins/p-scroll/perfect-scrollbar.js"></script>
+
+    <!-- Color Theme js -->
+    <script src="static/assets/js/themeColors.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="static/assets/js/custom.js"></script>
+    
+    {% endblock %}
+
+    
