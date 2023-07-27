@@ -110,7 +110,9 @@
                                                         <th class="bg-transparent border-bottom-0">Email</th>
                                                         <th class="bg-transparent border-bottom-0">Keywords</th>
                                                         <th class="bg-transparent border-bottom-0">Status</th>
-                                                        <th class="bg-transparent border-bottom-0" width="40%">Description</th>
+                                                        <th class="bg-transparent border-bottom-0">Category</th>
+                                                        <th class="bg-transparent border-bottom-0">Rating</th>
+                                                        <th class="bg-transparent border-bottom-0">Pricing</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -130,7 +132,9 @@
                                                             <span class="badge bg-secondary-transparent rounded-pill text-danger p-2 px-3">REJECTED</span>
                                                             {% endif %}
                                                         </strong></td>
-                                                        <td>{{p.description}}</td>
+                                                        <td>{{p.category}}</td>
+                                                        <td>{{p.rating}}</td>
+                                                        <td>{{p.pricing}}</td>
                                                     </tr>
                                                     {% endfor %}
                                                 </tbody>

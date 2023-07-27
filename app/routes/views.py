@@ -4,7 +4,8 @@ from flask import flash, render_template, redirect, url_for, request, make_respo
 from flask_login import login_required, login_user, logout_user, current_user
 from werkzeug.security import generate_password_hash, check_password_hash
 
-from ..functions.views import func_submission, func_get_submission, func_admin_dashboard, func_login, func_get_website
+from ..functions.views import func_submission, func_get_submission, func_admin_dashboard, func_login, func_get_website, \
+    func_search, func_recent_search, func_category_group
 
 
 @aitools_app.route('/', methods=['GET', 'POST'])
@@ -86,3 +87,31 @@ def submission(aid):
         "submission.html",
         site_data=site_data
     )
+
+
+###search###############################################################
+@aitools_app.route('/search', methods=['GET', 'POST'])
+def search():
+    """
+    """
+    response = None
+    if request.method == "POST":
+        search_text = request.form.to_dict() 
+        search_ip = request.remote_addr
+        response  = func_search(search_text['search'], search_ip)
+
+    return response
+
+
+@aitools_app.route('/recent_search', methods=['GET', 'POST'])
+def recent_search():
+    """
+    """
+    return func_recent_search()
+
+
+@aitools_app.route('/category_group', methods=['GET', 'POST'])
+def category_group():
+    """
+    """
+    return func_category_group()

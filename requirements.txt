@@ -16,3 +16,4 @@ WTForms==2.1
 python-dotenv==0.19.2
 requests==2.20.0
 Flask-Mail==0.9.1
+nltk=>=3.6.7

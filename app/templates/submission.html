@@ -84,7 +84,7 @@
                                                         <input type="text" class="form-control" placeholder="Business Email" name="business_email" maxlength="56" value="{{site_data.business_email}}">
                                                     </div>
                                                 </div>
-                                                <div class="col-md-12">
+                                                <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label class="form-label">
                                                             Ai Status Approval <br />
@@ -101,6 +101,51 @@
                                                             <option value="2">REJECTED</option>
                                                             <option value="0">PENDING</option>
                                                         </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="form-label">
+                                                            Ai Tools Category <br />
+                                                            <h3>{{site_data.category}}</h3>
+                                                        </label>
+                                                        <select class="form-control form-select select2" data-bs-placeholder="Select" name="category">
+                                                            <option value="COPYWRITING">COPYWRITING</option>
+                                                            <option value="CHAT">CHAT</option>
+                                                            <option value="IMAGE GENERATION">IMAGE GENERATION</option>
+                                                            <option value="CODING">CODING</option>
+                                                            <option value="ADVERTISEMENT">ADVERTISEMENT</option>
+                                                            <option value="STORYTELLING">STORYTELLING</option>
+                                                            <option value="TRANSCRIPTION">TRANSCRIPTION</option>
+                                                            <option value="DATA ANALYSIS">DATA ANALYSIS</option>
+                                                            <option value="PROGRAMMING">PROGRAMMING</option>
+                                                            <option value="RESEARCH">RESEARCH</option>
+                                                            <option value="AVATAR">AVATAR</option>
+                                                            <option value="BUSINESS">BUSINESS</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-2">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Rating (e.g 4.5)<span class="text-red">*</span></label>
+                                                        <input type="text" class="form-control" placeholder="Site Name" name="rating" maxlength="50" value="{{site_data.rating|upper}}">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Pricing<span class="text-red">*</span></label>
+                                                    </label>
+                                                    <select class="form-control form-select select2" data-bs-placeholder="Select" name="pricing">
+                                                        <option value="FREE">FREE</option>
+                                                        <option value="PAID">PAID</option>
+                                                        <option value="FREE AND PAID">FREE AND PAID</option>
+                                                    </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Image URL (Must be an S3 Bucket)<span class="text-red">*</span></label>
+                                                        <input type="text" class="form-control" placeholder="Image URL with http" name="image_url" maxlength="256" value="{{site_data.image_url}}">
                                                     </div>
                                                 </div>
                                                 <div class="form-footer mt-2 col-md-4">
