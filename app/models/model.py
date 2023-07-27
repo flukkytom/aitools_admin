@@ -4,26 +4,6 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from app import db
 
 
-class AiToolsMember(UserMixin, db.Model):
-    """
-    Member Table
-    """
-
-    # Ensures table will be named in plural and not in singular
-    # as is the name of the model
-    __tablename__ = 'member_access'
-    __table_args__ = {'extend_existing': True}
-
-    id = db.Column(db.Integer, primary_key=True)
-    firstname = db.Column(db.String(64), index=True, unique=True)
-    lastname = db.Column(db.String(128))
-    country = db.Column(db.String(64))
-    phone = db.Column(db.String(64))
-    email = db.Column(db.String(64))
-    password = db.Column(db.String(255))
-    last_login = db.Column(db.String(64))
-
-
 class AiToolsSubmit(UserMixin, db.Model):
     """
     Tools table

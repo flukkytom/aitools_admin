@@ -4,7 +4,7 @@ import random, string
 from app import db
 from flask import flash, redirect, render_template, url_for
 from flask_login import login_required, login_user, logout_user
-from .model import AiToolsAdmin, AiToolsMember
+from .model import AiToolsAdmin
 from werkzeug.security import generate_password_hash, check_password_hash
 from datetime import date, datetime, timedelta
 

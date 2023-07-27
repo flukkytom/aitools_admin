@@ -6,7 +6,7 @@ from flask import flash, redirect, render_template, url_for
 from datetime import date, datetime, timedelta
 from sqlalchemy import func
 
-from .model import AiToolsAdmin, AiToolsMember, AiToolsSubmit, AiToolsSearchData
+from .model import AiToolsAdmin, AiToolsSubmit, AiToolsSearchData
 
 
 def manage_site(site_data):

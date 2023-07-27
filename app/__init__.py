@@ -10,7 +10,7 @@ db = SQLAlchemy()
 login_manager = LoginManager()
 mail = Mail() # instantiate the mail class
 
-from .models.model import AiToolsMember
+from .models.model import AiToolsAdmin
 
 def init_app():
     """Construct the core application."""
@@ -33,7 +33,7 @@ def init_app():
 
     @login_manager.user_loader
     def load_user(id):
-        return AiToolsMember.query.filter_by(id=id).first()
+        return AiToolsAdmin.query.filter_by(id=id).first()
 
     @app.before_request
     def before_request():
