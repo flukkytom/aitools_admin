@@ -36,13 +36,10 @@ sudo yum install mariadb105-devel
 10. Install the Application requirements
 pip install -r requirements
 
-11. Install the NLTK library
-pip install nltk
-
-12. Run the NLTK script
+11. Run the NLTK script
 python app/functions/download_nltk_data.py
 
-13. Run your Application
+12. Run your Application
 python application.py
 
 Database Connection
