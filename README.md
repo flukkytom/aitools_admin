@@ -36,14 +36,11 @@ remember to use your github token as password
 10. Install the Application requirements
 `pip install -r requirements`
 
-11. Install the NLTK library
-`pip install nltk`
+11. Run the NLTK script
+python app/functions/download_nltk_data.py
 
-12. Run the NLTK script
-`python app/functions/download_nltk_data.py`
-
-13. Run your Application
-`python application.py`
+12. Run your Application
+python application.py
 
 Database Connection
 ===================
