@@ -37,7 +37,7 @@ remember to use your github token as password
 `pip install -r requirements`
 
 11. Run the NLTK script
-python app/functions/download_nltk_data.py
+`python app/functions/download_nltk_data.py`
 
 12. Run your Application
 python application.py
