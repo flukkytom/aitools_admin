@@ -40,7 +40,7 @@ remember to use your github token as password
 `python app/functions/download_nltk_data.py`
 
 12. Run your Application
-python application.py
+`python application.py`
 
 Database Connection
 ===================
