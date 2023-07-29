@@ -13,6 +13,9 @@ Run the download_nltk.py script once to enable searfch application
 remember to use your github token as password
 `git clone https://github.com/flukkytom/aitools_admin.git`
 
+To create Tokens for Password for Git Clone
+===========================================
+
 `Tokens: https://www.educative.io/answers/how-to-create-a-personal-access-token-for-github-access`
 
 4. Install Virtualenv
