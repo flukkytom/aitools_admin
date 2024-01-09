@@ -40,7 +40,7 @@ To create Tokens for Password for Git Clone
 `sudo yum install mariadb105-devel`
 
 11. Install the Application requirements
-`pip install -r requirements`
+`pip install -r requirements.txt`
 
 12. Run the NLTK script
 `python app/functions/download_nltk_data.py`
