@@ -41,11 +41,12 @@ To create Tokens for Password for Git Clone
 
 11. Install the Application requirements
 `pip install -r requirements.txt`
+(If you encounter a pip not found error: use `yum install pip`)
 
-12. Run the NLTK script
+13. Run the NLTK script
 `python app/functions/download_nltk_data.py`
 
-13. Run your Application
+14. Run your Application
 `python application.py`
 
 Database Connection
