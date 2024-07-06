@@ -46,7 +46,9 @@ To create Tokens for Password for Git Clone
 13. Run the NLTK script
 `python app/functions/download_nltk_data.py`
 
-14. Run your Application
+14. Update the application Config.py with your Database Connection details (See Database Connection below)
+
+15. Run your Application
 `python application.py`
 
 Database Connection
